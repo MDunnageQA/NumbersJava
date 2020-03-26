@@ -16,5 +16,19 @@ public class Numbers
 		System.out.println(totalNumbersToAdd);
 		
 	}
-
+	
+	public void numbersToText(String underTwentyNumbers[], String overTwentyNumbers[], int selectedNumber)
+	{		
+		if (selectedNumber < 20)
+		{
+			System.out.println(underTwentyNumbers[selectedNumber - 1]);
+		}
+		else
+		{
+			System.out.println(overTwentyNumbers[selectedNumber / 10 - 2] + " "
+					+ underTwentyNumbers[selectedNumber % 10 - 1]);
+		}
+		
+	}
+	
 }
